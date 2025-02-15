@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+     <!-- Bootstrap CSS -->
+     <!-- <link 
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+     rel="stylesheet" 
+     integrity="sha384-ENjdO4Dr2bkBIFxQpeoVZ6wDEn6haCgN2CqZfjMx3M7F6Cw6qV3G5KkXqzY+0xNb" 
+     crossorigin="anonymous"> -->
+ 
+</head>
+<body class="bg">
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bolder text-white" href="#">
+                <img src="assets/images/studentLogo.png" width="60" height="60" alt="StudentSphere Logo" loading="lazy"> StudentSphere
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-white ps-4">About</a>
+                    </li>
+                    
+                </ul>
+                <div class="ms-3">
+                    <a routerLink="/login" class="btn btn-outline-light">Login</a>
+                </div>
+            </div>         
+        </div> 
+    </nav>
+            
+            <div class="content">     
+                <h1 class="anim">Welcome To our Student Management System</h1>
+                <p class="anim">"Beware of little expenses, a small leak will sink a great ship."</p> 
+                <a href="#contact" class="btn anim">Contact Us</a>
+            </div>
+             <img src="assets/images/studentManBack_1.png" class="feature-img anim"> 
+      </section>
+      
+      <div class="services container my-5">
+        <div class="row g-4">
+          <!-- Admission Management System -->
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card text-center shadow-sm">
+              <img src="assets/images/admission.png" class="card-img-top mx-auto mt-3" alt="Admission Management" style="width: 200px; height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Admission Management System</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Time Table Management System -->
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card text-center shadow-sm">
+              <img src="assets/images/timeTableManagement.png" class="card-img-top mx-auto mt-3" alt="Time Table Management" style="width: 120px; height: 120px; object-fit: contain;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Time Table Management System</h5>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Attendance and Exam Management -->
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card text-center shadow-sm">
+              <img src="assets/images/attendenceExam.png" class="card-img-top mx-auto mt-3" alt="Attendance and Exam Management" style="width: 150px; height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Attendance and Exam Management</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="about" class="About">
+        <h1 class="Heading">About Us</h1>
+           <div class="contents d-flex justify-content-center">
+            <img src="assets/images/studentImg_1.png" class="bankFinance">
+            <p>Our Student Management System is designed to streamline the administration of student-related information in
+               educational institutions.It provides a centralized platform to efficiently manage various aspects of student life,
+              from admissions to graduation.This system makes the administration process more efficient by automating many tasks, 
+              reducing paperwork, and providing quick access to essential student information. Our goal is to help educational
+               institutions focus more on providing quality education, while our system handles the operational side of student
+               management.
+              </p>
+           </div>
+      </div>
+
+      <div id="contact" class="Contact">
+            <div class="datails">
+              <h2 class="text-center">Contact Us</h2><br>
+              <h5 class="text-center text-white">Email: banking@financial.com</h5><br>
+              <h5 class="text-center text-white">Phone: +91-442-879-5023</h5><br>
+              <h5 class="text-center text-white">Address: Anbu Nager,Nagercoil(Kanyakumari),India</h5><br>
+          </div> 
+      </div>
+
+
+       <!-- Bootstrap JS Bundle (Includes Popper) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+      
+</body>
+</html>

@@ -1,0 +1,256 @@
+.bg{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  font-family: sans-serif;
+  /* background-image: url("/assets/images/bankBG_2.jpg");
+  background-size: cover;
+  background-position: center; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/images/blueBg.jpg"); /* Corrected 'assert' to 'assets' */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between; 
+  background-image: linear-gradient(45deg,#16b2d1,#465af0);
+  padding:1rem;
+  box-shadow:4px 4px 10px rgba(4, 29, 119, 1.0);
+  position: fixed;
+  box-sizing: border-box;
+  /* background-color: rgba(4, 125, 165, 0.6);
+  border-bottom: 1px solid #fff; */
+}
+
+.navbar .navbar-brand{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  /* margin:10px 15px; */
+}
+
+nav ul li:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(139, 231, 238);
+  text-underline-offset: 10px;
+}
+
+
+
+.register{
+  text-decoration: none;
+  /* background-image: linear-gradient(45deg,#92e7f7,#0c24db); */
+  font-size:14px;
+  border-radius:30px;
+  /* border-top-right-radius: 0; */
+  padding:3px 10px;
+  font-size:16px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 15px;
+  background: #3043d7;
+  /* transition: 0.5s; */
+}
+
+.register:hover{
+  background: #050860;
+  border-top-right-radius: 30px;
+}
+
+.content{
+  margin-top:20%;
+  max-width:800px;
+  position: absolute;
+}
+
+.content h1{
+  font-size: 45px;
+  color:#222;
+  margin-left:120px;
+}
+
+.content p{
+  margin:10px 0 30px;
+  color:#333;
+  margin-left:150px;
+}
+
+.content .btn{
+  text-decoration: none;
+  color:white;
+  background: #3043d7;
+  font-size:14px;
+  border-radius:30px; 
+  padding:15px 80px;
+  font-size:16px;
+  margin-left:250px;
+  margin-top: 1.5rem;
+  /* transition: 0.5s; */
+}
+
+.content .btn:hover{
+  background: #010578;
+}
+
+.feature-img{
+  height:60%;
+  width:500px;
+  position:absolute;
+  bottom:0px;
+  right:10%;
+  top:25%;
+  margin-left:500px;
+}
+
+.anim {  
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 1.5s ease-out forwards; /* Slower animation duration */
+}
+
+.anim-h1 {
+  animation-delay: 0.5s; /* h1 appears after 0.5s */
+}
+
+.anim-p {
+  animation-delay: 4.5s; /* p appears after 4.5 seconds (after h1 finishes) */
+}
+
+.anim-btn {
+  animation-delay: 6s; /* button appears after 6 seconds */
+}
+
+@keyframes moveup {
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+.About .Heading{
+  padding-left: 50%;
+  padding-top: 10%;
+  text-decoration: underline;
+  text-decoration-color: rgb(139, 231, 238);
+  text-underline-offset: 10px;
+}
+
+.bankFinance{
+  padding-left: 10%;
+  width: 600px;
+  height: 560px;
+}
+
+.contents p{
+  padding-top: 8%;
+  font-size: 20px;
+}
+
+.col img {
+  /* Ensure smooth transitions for scaling */
+  transition: transform 0.3s ease;
+}
+
+.col img:active {
+  /* Scale the image down when clicked */
+  transform: scale(0.9); /* Shrinks to 90% of its original size */
+}
+
+/* Optional: You can add a hover effect too if desired */
+.col img:hover {
+  transform: scale(1.10); /* Slightly enlarge the image on hover */
+}
+
+.card{
+  border: 3px solid #70f0d2; /* Add the border */
+  padding: 10px; /* Add padding inside the border */
+  border-radius: 10px; /* Optional: Rounded corners */
+  background-color: #f8f9fa; /* Optional: Background color */
+  margin: 15px; /* Add space between the service items */
+}
+
+.contents img {
+  /* Ensure smooth transitions for scaling */
+  transition: transform 0.3s ease;
+}
+
+.contents img:active {
+  /* Scale the image down when clicked */
+  transform: scale(0.9); /* Shrinks to 90% of its original size */
+}
+
+/* Removed duplicate .col img:hover */
+
+.Contact{
+  background-image: url("/assets/images/contactImg_1.jpg"); /* Corrected path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Positions the image at the center */
+  padding-left: 10px;
+  height:100%;
+}
+
+.Contact .datails{
+  padding-top: 15%;
+}
+
+.Contact .datails h2{
+  color: #8ce0f1;
+  text-decoration: underline;
+  text-decoration-color: rgb(139, 231, 238);
+  text-underline-offset: 10px;
+}  
+
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+// .navbar-nav .dropdown-menu {
+//   margin-top: 0;
+//   transition: opacity 0.3s ease, visibility 0.3s ease;
+//   opacity: 0;
+//   visibility: hidden;
+// }
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Prevent dropdown from closing when interacting with menu */
+.dropdown-menu {
+  pointer-events: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  pointer-events: auto;
+}
+
+
+// .navbar-nav .dropdown-menu {
+//   z-index: 1000;
+// }
+
+/* Hover Effect for Dropdown Items */
+.dropdown-item:hover {
+  background-color: #0d6efd; /* Bootstrap's primary blue */
+  border: none;
+  color: white; /* Ensure text is readable on blue background */
+}

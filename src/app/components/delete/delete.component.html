@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+   <!-- Bootstrap CSS -->
+   <!-- <link 
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+   rel="stylesheet" 
+   integrity="sha384-ENjdO4Dr2bkBIFxQpeoVZ6wDEn6haCgN2CqZfjMx3M7F6Cw6qV3G5KkXqzY+0xNb" 
+   crossorigin="anonymous"> -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+  <section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bolder text-white" href="#">
+                <img src="assets/images/studentLogo.png" width="60" height="60" alt="StudentSphere Logo" loading="lazy"> StudentSphere
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-white">Home</a>
+                    </li>
+                    
+                </ul>
+                <div class="ms-3">
+                    <a routerLink="/dashboard" class="btn btn-outline-light">Back</a>
+                </div>
+            </div>         
+        </div> 
+    </nav>
+  
+<div class="container-3 my-5">
+  
+  <div class="container card mb-5 mt-0">
+    <form class="col-md-4" method="post">
+    <label for="Id" class="form-label">Enter the Id:</label>
+    <input type="text" name="id" [(ngModel)]="studentID" placeholder="Enter the ID for Delete" class="form-control" required>
+    <button type="button" (click)="deleteStudent(studentID)" class="btn btn-outline-danger">Delete</button>  
+  </form>
+  </div>  
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Date Of Birth</th>
+              <th scope="col">Department</th>
+              <th scope="col">Year</th>
+              <th scope="col">Percentage</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let s of student">
+            <tr class="fs-6">
+                <td scope="row">{{s.id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.dateOfBirth}}</td>
+                <td>{{s.department}}</td>
+                <td>{{s.year}}</td>
+                <td>{{s.percentage}}</td>
+              </tr>
+          </tbody>
+          <!-- <tbody>
+
+          </tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>1999-04-15</td>
+            <td>Computer Science</td>
+            <td>3</td>
+            <td>85%</td>
+           
+            
+          </tr> -->
+      </table>
+</div>
+</section>
+   <!-- Bootstrap JS Bundle (Includes Popper) -->
+<!-- <script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+fDVV7ZK3s0C4GbtZf0dE+LrQg5g8" 
+crossorigin="anonymous">
+</script> -->
+
+</body>
+</html>
+
+

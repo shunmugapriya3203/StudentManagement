@@ -1,0 +1,95 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    cursor:pointer;
+}
+
+// body{
+//     height:100vh;
+//     width:100%;
+//     display:flex;
+//     padding-right: 12px;
+//     align-items: center;
+//     /* background: linear-gradient(to right,#3f5efb,#fc466b) */
+//     background-image:url("/assets/images/EduCap.jpg");
+//     background-repeat: no-repeat;
+//     background-size:cover;
+//     background-attachment:scroll;
+// }
+.main
+{
+    padding:0px 0px 10px 100px;
+}
+.wrapper{
+    width:420px;
+    padding-left: 37%;
+}
+.wrapper img{
+    // font-size: 36px;
+    // text-align: center;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    
+}
+form
+{
+    width:25rem;
+    height:32rem;
+    display:flex;
+    flex-direction: column;
+    background: rgba(230, 224, 224, 0.475);
+    box-shadow:0 8px 32px 0 rgba(12, 12, 12, 1.0);
+    border-radius: 30px;
+    border-left: 1px solid rgba(37, 34, 34, 0.3);
+    border-top: 1px solid rgba(37, 34, 34, 0.3);
+}
+
+
+label
+{
+    font-size: 20px;
+    font-weight: bolder;
+    color:rgb(11, 11, 11);
+    margin-left: 10%;
+    opacity:0.8;
+    text-shadow:2px 2px 4px rgba(0,0,0,.2);
+}
+input
+{
+    height:40px;
+    width:80%;
+    margin:5% auto;
+    margin-bottom: 8%;
+    border-color: #fff;
+    border-radius:12px;
+}
+button
+{  
+    width:50%;
+    margin:3% auto;
+    padding:10px;
+    border: none;
+    outline:none;
+    cursor:pointer;
+    position:relative;
+    color:#fff;
+    border-radius:12px;
+    background:transparent;
+    background-color:#ff0080;
+}
+button:hover{
+    box-shadow:0 0 5px #ff0080,
+               0 0 25px #ff0080,
+               0 0 50px #ff0080,
+               0 0 100px #ff0080;                  ;
+}
+a{
+    font-size:12px;
+    text-align:center;
+    color:#fff;
+}
+

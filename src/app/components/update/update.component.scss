@@ -1,0 +1,95 @@
+body{
+    font-family: sans-serif;
+    top:0;
+    left: 0; /* Position at the left */
+    width: 100%; /* Cover full width */
+    height: 100vh;
+    background-image:url("/assets/images/bg_5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ }
+ .navbar{
+    display:flex;
+    justify-content:space-between;
+    background-image: linear-gradient(45deg,#c640a9,#dc15d2);
+    padding:1rem;
+    box-shadow:4px 4px 10px rgb(218, 97, 197);
+    position: fixed;
+    left: 0;
+    margin-bottom: 2rem;
+    /* background-color: rgba(4, 125, 165, 0.6);
+    border-bottom: 1px solid #fff; */
+ }
+ .navbar .navbar-brand{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ nav ul li{
+   list-style: none;
+ }
+
+ nav ul li:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(139, 231, 238);
+  text-underline-offset: 10px;
+ }
+
+ .btn{
+    text-decoration: none;
+    color:white;
+    background: #6146db;
+    /* transition: 0.5s; */
+  }
+
+ .container-3 {
+    padding-top: 80px; /* Ensure space below the navbar */
+}
+
+table{
+    margin-left: 10%;
+    width:80%;
+    border-spacing:30px 50px ;
+}
+table table, th{
+    font-weight: bold;
+    font-size:16px;
+    border-collapse:collapse;
+
+}
+table th{
+    background-color: #fb28d8;
+}
+tr, td{
+    padding:8px;
+    text-align: left;
+    border-bottom:2px solid #eecfcf;
+}
+
+th, td{
+   text-align: center;
+}
+
+/* Add hover effect directly to tr */
+table tr {
+    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+table tr:hover {
+    background-color: rgb(144, 235, 144); /* Change background color on hover */
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+  
+.navbar-nav .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-control{
+    width: 10%;
+    height: 10%;
+}
